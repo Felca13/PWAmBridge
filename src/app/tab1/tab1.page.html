@@ -1,0 +1,86 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Introducción mBridge
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Introducción mBridge</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content [fullscreen]="true">
+    <ion-card color="light">
+      <img alt="mBridge" src="https://tokenist.com/wp-content/uploads/2022/10/Screenshot-2022-10-26-194810.png" />
+      <ion-card-header>
+        <ion-card-title>mBridge</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        El G20 ha destacado la mejora de los pagos transfronterizos como una prioridad global y ha considerado las CBDC (Monedas Digitales de Bancos Centrales) 
+        como una solución potencial, gracias a que los pagos internacionales serían instantáneos, económicos, ampliamente accesibles y respaldados por una forma 
+        segura de liquidación. El proyecto llamado mBridge se está desarrollando para avanzar para permitir que varios bancos centrales emitan y cambien sus propias CBDC en 
+        una plataforma conjunta, buscando demostrar que un sistema eficiente, de bajo costo y en tiempo real de intercambio de CBDC entre bancos centrales y actores 
+        comerciales podría mejorar significativamente el comercio internacional y las transacciones transfronterizas.
+      </ion-card-content>
+    </ion-card>
+      <ion-button fill="outline" expand="block" (click)="setOpen(true)" color="warning" ><h4>G20</h4></ion-button>
+      <ion-modal [isOpen]="isModalOpen">
+        <ng-template>
+          <ion-header>
+            <ion-toolbar>
+              <ion-title>¿Que es G20?</ion-title>
+              <ion-buttons slot="end">
+                <ion-button (click)="setOpen(false)">Close</ion-button>
+              </ion-buttons>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content class="ion-padding">
+            <p>
+              G20 es un foro internacional de gobernantes y presidentes de bancos centrales, que tiene como meta discutir sobre políticas relacionadas con la 
+              promoción de la estabilidad financiera internacional, siendo el principal espacio de deliberación política y económica del mundo.mBridge es un proyecto que 
+              busca mejorar los pagos internacionales a través de una infraestructura común para múltiples CBDCs (Monedas Digitales de Bancos Centrales), 
+              permitiendo transacciones directas en CBDC emitidos por bancos centrales de diferentes jurisdicciones. El diseño de mBridge sigue cinco criterios generales 
+              para evaluar arreglos transfronterizos de CBDC basados en principios del BIS y el G7, con un enfoque en eficiencia, resiliencia y coexistencia con sistemas no-CBDC.
+            </p>
+          </ion-content>
+        </ng-template>
+      </ion-modal>
+      <ion-card color="light">
+        <ion-card-header>
+          <ion-card-title>¿Como Funciona?</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Opera por medio de una DLT personalizada, que permite pagos internacionales en tiempo real y transacciones de cambio de divisas (FX) a través de una plataforma que 
+          utiliza CBDCs, promoviendo la interoperabilidad entre sistemas de compensación nacionales y la inclusión financiera. Es de mencionar que mBridge es la tercera fase de 
+          un proyecto que comenzó en 2019 en la cual adopta una nueva cadena de bloques privada, diseñada para ser escalable y cumplir con regulaciones específicas. 
+        </ion-card-content>
+      </ion-card>
+      <ion-content class="ion-padding">
+        <ion-button fill="outline" expand="block" (click)="setOpen(true)" color="warning" ><h4>DLT</h4></ion-button>
+        <ion-modal [isOpen]="isModalOpen">
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>¿Que es DLT?</ion-title>
+                <ion-buttons slot="end">
+                  <ion-button (click)="setOpen(false)">Close</ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <p>
+                Opera por medio de una DLT personalizada, que permite pagos internacionales en tiempo real y transacciones de cambio de divisas (FX) a través de una plataforma 
+                que utiliza CBDCs, promoviendo la interoperabilidad entre sistemas de compensación nacionales y la inclusión financiera. Es de mencionar que mBridge es la 
+                tercera fase de un proyecto que comenzó en 2019 en la cual adopta una nueva cadena de bloques privada, diseñada para ser escalable y cumplir con regulaciones 
+                específicas. 
+              </p>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/J-JubAJEgxA?si=JGG4xuJU_UtfsiSd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+      </ion-content>
+    </ion-content>

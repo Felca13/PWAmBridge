@@ -1,0 +1,69 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Pagos transfronterizos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Pagos transfronterizos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+    <ion-card color="light">
+      <img alt="mBridge" src="https://blog.bitso.com/wp-content/uploads/2023/06/49_empresas-que-hacen-pagos-transfronterizos.jpg" />
+      <ion-card-header>
+        <ion-card-title>El estado actual de los pagos transfronterizos</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        En las últimas décadas, ha habido un rápido crecimiento en la integración económica global, pero sin embargo, el sistema de flujos financieros transfronterizos no 
+        ha avanzado al mismo ritmo, pues los  pagos internacionales a menudo se realizan a través de bancos corresponsales, lo que resulta en costos elevados, baja velocidad 
+        y complejidades operativas. 
+        La mayoría de las veces, la liquidación en la banca corresponsal se realiza en créditos de bancos comerciales, lo que conlleva riesgos crediticios y de liquidez y 
+        el cual se vuelve más relevante en transacciones grandes y períodos de liquidación prolongados, al igual que presenta desafíos adicionales para economías emergentes 
+        y en desarrollo (EMDEs) ya que pueden tener acceso limitado al sistema financiero global. Las transacciones a menudo se liquidan en monedas dominantes, exponiendo a 
+        las EMDEs a políticas monetarias y riesgos financieros de otras jurisdicciones.
+      </ion-card-content>
+    </ion-card>
+    <iframe width="360" height="315" src="https://www.youtube.com/embed/Y6G9WAkdhR4?si=XIH41jZ1lCruX-3m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <ion-card color="light">
+      <img alt="mBridge" src="https://www.financebrokerage.com/wp-content/uploads/2023/03/What-is-central-bank-digital-currency-CBDC.jpg">
+      <ion-card-header>
+        <ion-card-title>¿Que va innovar mBridge con los CBDC?</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Por su parte plataforma mBridge busca abordar estos desafíos al permitir pagos directos entre participantes utilizando monedas digitales de bancos centrales (CBDCs), 
+        reduciendo costos, extender la protección de liquidación y respaldar el uso de monedas locales en pagos internacionales. 
+        Gracias a que desde antes a fase piloto, el equipo del proyecto colaboró ampliamente con actores del sector privado para encontrar oportunidades empresariales para la 
+        plataforma, identificando 15 posibles casos de uso en los cuales la plataforma mBridge podría generar valor, como fue el caso de a liquidación de comercio internacional 
+        como el primer caso a pilotar en mBridge, debido a la importancia del comercio en la región y el gran valor comercial en las cuatro jurisdicciones, al igual que al apoyar 
+        el desarrollo de los mercados de divisas locales, extender la seguridad respaldada por el banco central a las liquidaciones internacionales y resolver desafíos en los pagos
+        transfronterizos, mBridge tiene el potencial de facilitar el comercio en la región y, en consecuencia, impulsar el crecimiento económico relacionado con el comercio.
+      </ion-card-content>
+      </ion-card>
+      <ion-content class="ion-padding">
+        <ion-button fill="outline" expand="block" (click)="setOpen(true)" color="warning" ><h4>CBDC</h4></ion-button>
+        <ion-modal [isOpen]="isModalOpen">
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>¿Que es CBDC?</ion-title>
+                <ion-buttons slot="end">
+                  <ion-button (click)="setOpen(false)">Close</ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <p>
+                Una moneda digital de banco central, o CBDC por sus siglas en inglés (Central Bank Digital Currency), es una nueva forma de dinero emitida de forma 
+                electrónica por un banco central. Los bancos centrales buscan emitir sus propias monedas digitales con el objetivo de mejorar el sistema de pagos, dado 
+                el aumento de los pagos electrónicos y el descenso del uso del efectivo, pero también porque la creación de instrumentos electrónicos de pago privados no 
+                regulados, como las stablecoins, puede poner en riesgo la estabilidad financiera. 
+              </p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/EnxnGeZO6XU?si=FyQ8wi5_G1VjXenU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
+      </ion-content>

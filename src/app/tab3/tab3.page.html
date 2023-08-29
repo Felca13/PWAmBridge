@@ -1,0 +1,235 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Piloto
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Piloto</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card color="light">
+    <img alt="mBridge" src="https://f9p9c7p7.stackpathcdn.com/wp-content/uploads/2022/11/Participating-commercial-banks-in-the-pilot-Source-Project-mBridge-Connecting-economies-through-CBDC-Oct-2022.png?x53021" />
+    <ion-card-header>
+      <ion-card-title>El piloto mBridge27</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      El piloto mBridge27 destaca en el espacio multi-CBDC al abordar la naturaleza de las transacciones, su número y valor, y la participación de los 
+      involucrados. Durante seis semanas, el proyecto mBridge realizó un piloto a gran escala, ejecutando transacciones reales de CBDC en cuatro jurisdicciones, 
+      directamente en su libro mayor. Este proyecto transfronterizo líder involucró a bancos comerciales de renombre, facilitando pagos internacionales y entre grupos 
+      interbancarios, diferenciándose al liquidar las operaciones directamente en la plataforma compartida en lugar de en sistemas nacionales de pago. Con más de 12 millones 
+      de dólares en CBDC emitidos, más de 22 millones en pagos y liquidaciones instantáneas a través de fronteras, el proyecto demostró con éxito la capacidad de mejorar la 
+      velocidad, eficiencia y seguridad de los pagos transfronterizos y la reducción de riesgos de liquidación.
+    </ion-card-content>
+  </ion-card>
+  <ion-button fill="outline" expand="block" (click)="setOpen(true)" color="warning" ><h6>5.1 preparación y puesta en marcha</h6></ion-button>
+        <ion-modal [isOpen]="isModalOpen">
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>preparación y puesta en marcha</ion-title>
+                <ion-buttons slot="end">
+                  <ion-button (click)="setOpen(false)">Close</ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <p>
+              El éxito del proyecto piloto mBridge27 requirió una coordinación amplia entre bancos centrales y comerciales, tanto a nivel departamental como 
+              transjurisdiccional. Dado que el CBDC representaba una nueva forma digital de dinero, se necesitó una colaboración interdepartamental dentro de los 
+              bancos centrales y comerciales para garantizar la disponibilidad y la capacidad de transacción con CBDC. La naturaleza transfronteriza implicó una 
+              sincronización extensa entre los cuatro bancos centrales y los 20 bancos comerciales, asegurando el cumplimiento de requisitos legales y operativos.
+              Para establecer seguridad legal en el proyecto, se elaboraron tres documentos fundamentales: un Acuerdo de Participación que describe los roles de 
+              los bancos centrales y comerciales, Condiciones de Funcionamiento para la plataforma y Términos y Condiciones específicos para el uso de CBDC. La 
+              plataforma mBridge se implementó en una nube segura en Hong Kong, permitiendo el acceso a través de una interfaz web, si bien se contempla una distribución 
+              más amplia en futuras fases.
+              El proyecto piloto tuvo una duración de seis semanas, dividido en tres fases, cada una incorporando más jurisdicciones. La primera fase implicó transacciones 
+              entre bancos de Hong Kong y China continental, luego se añadieron los bancos de los Emiratos Árabes Unidos en la segunda fase y, finalmente, los bancos tailandeses 
+              en la tercera. Cada fase se precedió por pruebas de aceptación de usuarios para familiarizar a los bancos con la plataforma y garantizar un funcionamiento óptimo.
+              </p>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
+        <ion-button fill="outline" expand="block" (click)="setOpen(true)" color="warning" ><h6>5.2 tipos de transacciones y requisitos funcionales</h6></ion-button>
+        <ion-modal [isOpen]="isModalOpen">
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>tipos de transacciones y requisitos funcionales</ion-title>
+                <ion-buttons slot="end">
+                  <ion-button (click)="setOpen(false)">Close</ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <p>
+                El proyecto piloto de mBridge27 se enfocó en los tipos de operaciones cruciales para el comercio internacional y la liquidación transfronteriza en 
+                moneda local. Se examinaron tres tipos de transacciones principales:
+                  
+        
+                  <ion-list [inset]="true">
+                    <ion-item>
+                      <ion-label>Emisión y Amortización de CBDC entre Bancos Nacionales</ion-label>
+                    </ion-item>
+                    <ion-item>
+                      <ion-label>Pagos Transfronterizos entre Bancos Comerciales en CBDC Locales</ion-label>
+                    </ion-item>
+                    <ion-item>
+                      <ion-label>PvP FX (Intercambio de Divisas) Transfronterizo entre Bancos<br/>Comerciales en CBDC Locales</ion-label>
+                    </ion-item>
+                  </ion-list>
+                  Estas transacciones se respaldaron con funcionalidades diferenciadas para bancos centrales y comerciales. Los bancos centrales tenían un conjunto 
+                  más amplio de funciones, como emisión y reembolso de CBDC, establecimiento de parámetros de divisas y supervisión de transacciones. Los bancos 
+                  comerciales tenían capacidades más limitadas, como solicitar emisión y amortización de CBDC y realizar transacciones push entre pares. Además, la plataforma
+                  se esforzó por cumplir con requisitos no funcionales como integridad de datos, privacidad de transacciones, escalabilidad, rendimiento y supervisión 
+                  transparente.
+              </p>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
+        <ion-button fill="outline" expand="block" (click)="setOpen(true)" color="warning" ><h6>5.1 preparación y puesta <br/> en marcha</h6></ion-button>
+        <ion-modal [isOpen]="isModalOpen">
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>preparación y puesta en marcha</ion-title>
+                <ion-buttons slot="end">
+                  <ion-button (click)="setOpen(false)">Close</ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <p>
+              El éxito del proyecto piloto mBridge27 requirió una coordinación amplia entre bancos centrales y comerciales, tanto a nivel departamental como 
+              transjurisdiccional. Dado que el CBDC representaba una nueva forma digital de dinero, se necesitó una colaboración interdepartamental dentro de los 
+              bancos centrales y comerciales para garantizar la disponibilidad y la capacidad de transacción con CBDC. La naturaleza transfronteriza implicó una 
+              sincronización extensa entre los cuatro bancos centrales y los 20 bancos comerciales, asegurando el cumplimiento de requisitos legales y operativos.
+              Para establecer seguridad legal en el proyecto, se elaboraron tres documentos fundamentales: un Acuerdo de Participación que describe los roles de 
+              los bancos centrales y comerciales, Condiciones de Funcionamiento para la plataforma y Términos y Condiciones específicos para el uso de CBDC. La 
+              plataforma mBridge se implementó en una nube segura en Hong Kong, permitiendo el acceso a través de una interfaz web, si bien se contempla una distribución 
+              más amplia en futuras fases.
+              El proyecto piloto tuvo una duración de seis semanas, dividido en tres fases, cada una incorporando más jurisdicciones. La primera fase implicó transacciones 
+              entre bancos de Hong Kong y China continental, luego se añadieron los bancos de los Emiratos Árabes Unidos en la segunda fase y, finalmente, los bancos tailandeses 
+              en la tercera. Cada fase se precedió por pruebas de aceptación de usuarios para familiarizar a los bancos con la plataforma y garantizar un funcionamiento óptimo.
+              </p>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
+        <ion-button fill="outline" expand="block" (click)="setOpen(true)" color="warning" ><h6>5.3 Estadísticas piloto</h6></ion-button>
+        <ion-modal [isOpen]="isModalOpen">
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>Estadísticas piloto</ion-title>
+                <ion-buttons slot="end">
+                  <ion-button (click)="setOpen(false)">Close</ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <p>
+                Las estadísticas del proyecto piloto mBridge27 se presentan en el Cuadro 1. A lo largo de seis semanas, se emitieron en mBridge un total de 8,5 millones de 
+                e-HKD, ¥11,8 millones de e-CNY, 31 millones de e-AED y 32,1 millones de e-THB como CBDC M0 por los bancos centrales. La emisión conjunta en las cuatro monedas 
+                sumó 12,1 millones de dólares en liquidez en la plataforma, lo que permitió la realización de 164 transacciones de pagos transfronterizos y operaciones de FX 
+                PvP por un valor total de 22,1 millones de dólares. Se observa que los CBDC emitidos en mBridge facilitaron aproximadamente el doble de valor transfronterizo 
+                durante el proyecto.
+                Si se desglosan los valores de las transacciones por divisa, e-HKD representó 13,2 millones de HK$, e-CNY 23,6 millones de ¥, e-AED 60,1 millones de إ.د y 
+                e-THB 23,5 millones de ฿. Se notó que las transacciones e-HKD y e-CNY superaron significativamente a las de e-AED y e-THB, en parte debido a la inclusión 
+                escalonada de bancos participantes en diferentes fases del piloto. Además, la variación en los valores refleja los diferentes tipos de transacciones facilitadas
+                 y las reglas establecidas por los bancos centrales emisores.
+                La plataforma permitió la conectividad directa entre bancos comerciales, lo que contrasta con el modelo de corresponsalía bancaria tradicional que suele requerir 
+                intermediarios y enrutamientos complejos. Las conexiones directas de igual a igual en mBridge facilitaron 41 conexiones únicas transfronterizas entre pares, y 
+                cada banco realizó transacciones, en promedio, con dos bancos de otras jurisdicciones.
+                Estas conexiones directas pueden simplificar significativamente los pagos transfronterizos, en contraste con los sistemas de corresponsalía bancaria que a menudo 
+                involucran intermediarios y enrutamientos a través de divisas de terceros. Además, la liquidación en mBridge se efectúa con el respaldo del banco central, lo que 
+                disminuye el riesgo en comparación con los pagos a través de corresponsales bancarios tradicionales.
+              </p>
+              <img alt="mBridge" src="https://pbs.twimg.com/media/Ff-nIfFXgAcwk7P?format=jpg&name=4096x4096 " />
+            </ion-content>
+          </ng-template>
+        </ion-modal>
+        <ion-button fill="outline" expand="block" (click)="setOpen(true)" color="warning" ><h6>5.4 Lecciones clave</h6></ion-button>
+        <ion-modal [isOpen]="isModalOpen">
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>Lecciones clave</ion-title>
+                <ion-buttons slot="end">
+                  <ion-button (click)="setOpen(false)">Close</ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <p>
+                El proyecto piloto proporcionó valiosas lecciones que guiarán el desarrollo de futuras etapas del proyecto. Las decisiones sobre el diseño de la plataforma 
+                y las dinámicas de participación influyeron en su utilización y también influirán en la planificación futura.
+                Una lección importante fue la limitada cantidad de transacciones de PvP FX en comparación con los pagos unidireccionales. Esto se debió en parte a restricciones 
+                de tiempo para descargar los CBDC extranjeros, así como al solapamiento limitado de las horas de operación entre las jurisdicciones participantes. Además, los 
+                tipos de cambio se establecieron previamente para las operaciones PvP, lo que añadió complejidad al proceso y fomentó la preferencia por solicitar divisas contra 
+                saldos preexistentes en cuentas nostro en lugar de usar la función FX PvP de mBridge.
+                Se observó que las operaciones se realizaron mayormente entre bancos con relaciones comerciales preexistentes debido a la necesidad de depender de relaciones de 
+                corresponsalía para obtener liquidez en el corto período del proyecto. Para aprovechar plenamente la conectividad bilateral directa de mBridge y su función FX 
+                PvP, es esencial que las funciones de provisión y gestión de liquidez, así como la facilitación de la negociación de divisas, se integren de manera efectiva en 
+                la plataforma en el futuro.
+                Además, se destacó la importancia de la integración de mBridge con sistemas nacionales de pagos al por mayor. La plataforma modular permite tanto integración 
+                manual como automática con estos sistemas. La integración automática se demostró exitosa con el Banco Popular de China (PBC), que utilizó la función automática 
+                de emisión y reembolso en su sistema nacional de e-CNY. La automatización de estos procesos es fundamental para el éxito continuado de mBridge.
+              </p>
+              <img alt="mBridge" src="https://pbs.twimg.com/media/Ff-nIfFXgAcwk7P?format=jpg&name=4096x4096 " />
+            </ion-content>
+          </ng-template>
+        </ion-modal>
+        <ion-button fill="outline" expand="block" (click)="setOpen(true)" color="warning" ><h6>5.5 Participantes</h6></ion-button>
+        <ion-modal [isOpen]="isModalOpen">
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>Participantes</ion-title>
+                <ion-buttons slot="end">
+                  <ion-button (click)="setOpen(false)">Close</ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <p>
+                Después de finalizar el proyecto piloto, se solicitó a los bancos comerciales participantes de cada jurisdicción que compartieran sus comentarios a través de 
+                un cuestionario estructurado. En general, la mayoría de los encuestados encontraron que la plataforma era intuitiva y fácil de usar. Participar en el proyecto 
+                piloto les resultó útil para comprender cómo una plataforma CBDC puede integrarse en sus flujos de trabajo. Además, expresaron su interés en participar en futuros 
+                proyectos piloto y reconocieron las ventajas de cambiar a la plataforma mBridge en términos de velocidad, reducción de intermediarios, transparencia, costos, 
+                disponibilidad y reducción de riesgos.
+
+                <ion-list [inset]="true">
+                  <ion-item>
+                    <ion-label>Los comentarios de los bancos comerciales incluyeron <br/>sugerencias para mejorar la plataforma:</ion-label>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label>Introducción de creadores de FX y proveedores de <br/>liquidez parafacilitar la negociación de divisas en el puente.</ion-label>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label>Interoperabilidad con sistemas nacionales y <br/>conectividad a través de API para permitir el<br/> procesamiento directo y la ejecución de extremo a extremo.</ion-label>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label>Mecanismos de comprobación de creadores de liquidez.</ion-label>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label>Expansión de las jurisdicciones y divisas disponibles<br/> en la plataforma.</ion-label>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label>Exploración de más casos de uso.</ion-label>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label>Mejoras en los términos y condiciones, y una estructura jurídica y de<br/> gobierno a medida a medida que la plataforma avance <br/>hacia la fase de producción.</ion-label>
+                  </ion-item>
+                </ion-list>
+                Estas sugerencias son cruciales para determinar la futura dirección del proyecto mBridge y configurar su hoja de ruta. La retroalimentación de los participantes será fundamental para mejorar 
+                la plataforma y garantizar su adecuación a las necesidades y expectativas de los bancos comerciales a medida que avanza hacia la producción.
+              </p>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
+</ion-content>
